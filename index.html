@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeMaster - Fullstack Development Course for Beginners</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <span>CodeMaster</span>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#instructor">Instructor</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="fade-in">Become a Fullstack Developer in 12 Weeks</h1>
+          <p class="subtitle fade-in-delay">Learn to build complete web applications from scratch with our comprehensive, beginner-friendly course.</p>
+          <div class="cta-buttons fade-in-delay-2">
+            <a href="#pricing" class="btn btn-primary">Enroll Now</a>
+            <a href="#curriculum" class="btn btn-secondary">View Curriculum</a>
+          </div>
+          <div class="stats fade-in-delay-3">
+            <div class="stat">
+              <span class="stat-number" id="studentCount">2,500+</span>
+              <span class="stat-label">Students</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">4.9/5</span>
+              <span class="stat-label">Rating</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">Completion</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image fade-in-right">
+          <img src="https://images.pexels.com/photos/7375/startup-photos.jpg" alt="Developers working together" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose Our Course?</h2>
+        <div class="features-grid">
+          <div class="feature-card slide-up">
+            <div class="feature-icon">
+              <img src="images/project-based.svg" alt="Project-based learning" class="icon-placeholder" />
+            </div>
+            <h3>Project-Based Learning</h3>
+            <p>Build 8 real-world projects that you can add to your portfolio immediately.</p>
+          </div>
+          <div class="feature-card slide-up delay-1">
+            <div class="feature-icon">
+              <img src="images/support.svg" alt="Mentor support" class="icon-placeholder" />
+            </div>
+            <h3>1-on-1 Mentorship</h3>
+            <p>Get personalized feedback and support from experienced developers.</p>
+          </div>
+          <div class="feature-card slide-up delay-2">
+            <div class="feature-icon">
+              <img src="images/community.svg" alt="Developer community" class="icon-placeholder" />
+            </div>
+            <h3>Community Access</h3>
+            <p>Join our vibrant community of developers for networking and support.</p>
+          </div>
+          <div class="feature-card slide-up delay-3">
+            <div class="feature-icon">
+              <img src="images/job.svg" alt="Job guarantee" class="icon-placeholder" />
+            </div>
+            <h3>Job-Ready Skills</h3>
+            <p>Learn the exact skills employers are looking for in entry-level developers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum" id="curriculum">
+      <div class="container">
+        <h2 class="section-title">Course Curriculum</h2>
+        <p class="section-subtitle">A comprehensive curriculum designed to take you from beginner to job-ready developer.</p>
+        
+        <div class="timeline">
+          <div class="timeline-item slide-in-left">
+            <div class="timeline-content">
+              <div class="timeline-marker">1</div>
+              <h3>Front-End Foundations</h3>
+              <p>Master HTML, CSS, and JavaScript fundamentals. Build responsive websites and interactive UIs.</p>
+              <ul class="timeline-list">
+                <li>HTML5 Semantic Elements</li>
+                <li>CSS Flexbox & Grid</li>
+                <li>JavaScript ES6+ Features</li>
+                <li>DOM Manipulation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item slide-in-right">
+            <div class="timeline-content">
+              <div class="timeline-marker">2</div>
+              <h3>Back-End Development</h3>
+              <p>Learn server-side programming with Node.js. Build APIs and handle data persistence.</p>
+              <ul class="timeline-list">
+                <li>Node.js & Express</li>
+                <li>RESTful API Design</li>
+                <li>Database Design</li>
+                <li>Authentication & Authorization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item slide-in-left">
+            <div class="timeline-content">
+              <div class="timeline-marker">3</div>
+              <h3>Database Integration</h3>
+              <p>Work with SQL and NoSQL databases. Implement data models and relationships.</p>
+              <ul class="timeline-list">
+                <li>MongoDB Fundamentals</li>
+                <li>PostgreSQL Basics</li>
+                <li>ORM/ODM Tools</li>
+                <li>Data Validation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item slide-in-right">
+            <div class="timeline-content">
+              <div class="timeline-marker">4</div>
+              <h3>Fullstack Integration</h3>
+              <p>Combine front-end and back-end skills to build complete applications.</p>
+              <ul class="timeline-list">
+                <li>API Integration</li>
+                <li>State Management</li>
+                <li>Performance Optimization</li>
+                <li>Deployment Strategies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructor Section -->
+    <section class="instructor" id="instructor">
+      <div class="container">
+        <h2 class="section-title">Meet Your Instructor</h2>
+        <div class="instructor-profile">
+          <div class="instructor-image fade-in">
+            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Sarah Johnson" />
+          </div>
+          <div class="instructor-info fade-in-delay">
+            <h3>Sarah Johnson</h3>
+            <p class="instructor-title">Senior Fullstack Developer</p>
+            <p class="instructor-bio">With over 10 years of experience in the industry, Sarah has worked with companies like Google, Microsoft, and several successful startups. She specializes in building scalable web applications and has helped hundreds of beginners transition into successful tech careers.</p>
+            <div class="instructor-credentials">
+              <div class="credential">
+                <span class="credential-number">10+</span>
+                <span class="credential-label">Years Experience</span>
+              </div>
+              <div class="credential">
+                <span class="credential-number">50+</span>
+                <span class="credential-label">Projects</span>
+              </div>
+              <div class="credential">
+                <span class="credential-number">1,200+</span>
+                <span class="credential-label">Students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <h2 class="section-title">Pricing Plans</h2>
+        <p class="section-subtitle">Choose the plan that fits your learning style and budget.</p>
+        
+        <div class="pricing-grid">
+          <div class="pricing-card slide-up">
+            <div class="pricing-header">
+              <h3>Basic</h3>
+              <div class="pricing-price">
+                <span class="currency">$</span>
+                <span class="amount">499</span>
+              </div>
+              <p class="pricing-description">Self-paced learning with basic support.</p>
+            </div>
+            <ul class="pricing-features">
+              <li>Full course access</li>
+              <li>Community forum access</li>
+              <li>8 coding projects</li>
+              <li>6 months access</li>
+              <li class="not-included">1-on-1 mentorship</li>
+              <li class="not-included">Job placement assistance</li>
+              <li class="not-included">Certificate of completion</li>
+            </ul>
+            <a href="#" class="btn btn-secondary pricing-cta">Get Started</a>
+          </div>
+          
+          <div class="pricing-card popular slide-up delay-1">
+            <div class="popular-tag">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Premium</h3>
+              <div class="pricing-price">
+                <span class="currency">$</span>
+                <span class="amount">999</span>
+              </div>
+              <p class="pricing-description">Guided learning with mentorship support.</p>
+            </div>
+            <ul class="pricing-features">
+              <li>Full course access</li>
+              <li>Community forum access</li>
+              <li>8 coding projects</li>
+              <li>12 months access</li>
+              <li>Bi-weekly 1-on-1 mentorship</li>
+              <li>Resume & portfolio review</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <a href="#" class="btn btn-primary pricing-cta">Enroll Now</a>
+          </div>
+          
+          <div class="pricing-card slide-up delay-2">
+            <div class="pricing-header">
+              <h3>Ultimate</h3>
+              <div class="pricing-price">
+                <span class="currency">$</span>
+                <span class="amount">1,499</span>
+              </div>
+              <p class="pricing-description">Intensive training with career support.</p>
+            </div>
+            <ul class="pricing-features">
+              <li>Full course access</li>
+              <li>Community forum access</li>
+              <li>12 coding projects</li>
+              <li>Lifetime access</li>
+              <li>Weekly 1-on-1 mentorship</li>
+              <li>Job placement assistance</li>
+              <li>Certificate of completion</li>
+            </ul>
+            <a href="#" class="btn btn-secondary pricing-cta">Get Started</a>
+          </div>
+        </div>
+        
+        <div class="guarantee">
+          <p>30-Day Money-Back Guarantee. No questions asked.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Student Success Stories</h2>
+        <div class="testimonial-wrapper">
+          <div class="testimonial-container" id="testimonialContainer">
+            <div class="testimonial active">
+              <div class="testimonial-content">
+                <p>"This course completely changed my career path. I went from knowing almost nothing about coding to landing a junior developer job in just 4 months. The curriculum is well-structured and the projects are relevant to what employers are looking for."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="Michael Rodriguez" />
+                  <div class="author-info">
+                    <h4>Michael Rodriguez</h4>
+                    <p>Junior Developer at TechStart</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>"The mentorship was what made this course stand out. Having an experienced developer review my code and provide feedback was invaluable. The community is also amazing - I still keep in touch with many of my fellow students."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Jennifer Lee" />
+                  <div class="author-info">
+                    <h4>Jennifer Lee</h4>
+                    <p>Frontend Developer at DesignHub</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <p>"As someone with zero technical background, I was worried about keeping up. The course is truly beginner-friendly and breaks down complex concepts into manageable chunks. I'm now building my own projects with confidence."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="David Thompson" />
+                  <div class="author-info">
+                    <h4>David Thompson</h4>
+                    <p>Freelance Web Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-control prev" id="testimonialsButtonPrev" aria-label="Previous testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="testimonial-indicators" id="testimonialIndicators">
+              <button class="indicator active" data-index="0" aria-label="Testimonial 1"></button>
+              <button class="indicator" data-index="1" aria-label="Testimonial 2"></button>
+              <button class="indicator" data-index="2" aria-label="Testimonial 3"></button>
+            </div>
+            <button class="testimonial-control next" id="testimonialsButtonNext" aria-label="Next testimonial">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container" id="faqContainer">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need any prior programming experience?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>No prior experience is required. Our course is designed for complete beginners and starts with the fundamentals. We gradually build up to more complex topics, ensuring you have a solid foundation before moving forward.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How much time should I dedicate per week?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>We recommend dedicating at least 15-20 hours per week to get the most out of the course. This includes watching lectures, completing exercises, working on projects, and participating in mentorship sessions.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Will I get a certificate upon completion?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, you'll receive a certificate of completion when you finish all course modules and projects. This certificate can be added to your LinkedIn profile and resume.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What if I fall behind or get stuck?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>You'll have access to our community forum where you can ask questions and get help from instructors and fellow students. Premium and Ultimate plan students also have regular 1-on-1 mentorship sessions to address any challenges.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I get a refund if the course isn't right for me?</span>
+              <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer a 30-day money-back guarantee. If you're not satisfied with the course for any reason, you can request a full refund within the first 30 days of your enrollment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Get a Free Sample Lesson</h2>
+          <p>Sign up for our newsletter and receive a free lesson on building your first responsive website.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="form-group">
+              <input type="email" id="newsletterEmail" placeholder="Your email address" required />
+              <button type="submit" class="btn btn-primary">Get Free Lesson</button>
+            </div>
+            <div class="form-feedback" id="newsletterFeedback"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Start Your Coding Journey?</h2>
+          <p>Join thousands of students who have successfully launched their careers in tech.</p>
+          <a href="#pricing" class="btn btn-primary btn-large">Enroll Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">CodeMaster</div>
+          <p>Transforming beginners into professional fullstack developers since 2020.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#instructor">Instructor</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.9V19.9C22 20.5 21.5 21 20.8 21C10.5 21 2 12.5 2 2.2C2 1.5 2.5 1 3.1 1H6.1C6.7 1 7.2 1.5 7.2 2.1C7.2 3.6 7.5 5 8 6.3C8.2 6.9 8 7.5 7.4 7.8L5.4 9.2C7.2 12.6 9.9 15.3 13.3 17.1L14.7 15.1C15 14.5 15.7 14.3 16.3 14.5C17.6 15 19 15.3 20.5 15.3C21.1 15.3 21.6 15.8 21.6 16.4C21.6 16.5 21.6 16.5 21.6 16.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>(555) 123-4567</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>support@codemaster.com</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 3.01006C22.0424 3.68553 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 22.6608 4.40277 23 3.01006Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5401 6.42C22.4213 5.94541 22.1794 5.51057 21.8387 5.15941C21.4981 4.80824 21.0708 4.55318 20.6001 4.42C18.8801 4 12.0001 4 12.0001 4C12.0001 4 5.12008 4 3.40008 4.46C2.92933 4.59318 2.50206 4.84824 2.16143 5.19941C1.8208 5.55057 1.57887 5.98541 1.46008 6.46C1.14529 8.20556 0.991345 9.97631 1.00008 11.75C0.988741 13.537 1.14268 15.3213 1.46008 17.08C1.59104 17.5398 1.83839 17.9581 2.17817 18.2945C2.51794 18.6308 2.93882 18.8738 3.40008 19C5.12008 19.46 12.0001 19.46 12.0001 19.46C12.0001 19.46 18.8801 19.46 20.6001 19C21.0708 18.8668 21.4981 18.6118 21.8387 18.2606C22.1794 17.9094 22.4213 17.4746 22.5401 17C22.8524 15.2676 23.0064 13.5103 23.0001 11.75C23.0114 9.96295 22.8574 8.1787 22.5401 6.42Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 11.37C16.1234 12.2022 15.9813 13.0522 15.5938 13.799C15.2063 14.5458 14.5932 15.1514 13.8416 15.5297C13.0901 15.9079 12.2385 16.0396 11.4078 15.9059C10.5771 15.7723 9.80977 15.3801 9.21485 14.7852C8.61993 14.1902 8.22774 13.4229 8.09408 12.5922C7.96042 11.7615 8.09208 10.9099 8.47034 10.1584C8.8486 9.40685 9.4542 8.79374 10.201 8.40624C10.9478 8.01874 11.7978 7.87659 12.63 8C13.4789 8.12588 14.2649 8.52146 14.8717 9.1283C15.4785 9.73515 15.8741 10.5211 16 11.37Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M17.5 6.5H17.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CodeMaster. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
